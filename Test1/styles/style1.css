@@ -1,0 +1,55 @@
+body {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #c3cfe2;
+}
+
+.card {
+  background-color: white;
+  border: #686de0 1px solid;
+  -webkit-box-shadow: 5px 5px #8c9097;
+          box-shadow: 5px 5px #8c9097;
+  border-radius: 30px;
+  width: 450px;
+  height: 621px;
+  margin: 20px;
+}
+
+.card__header {
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #6b6868;
+  width: 450px;
+  height: 600px;
+}
+
+.card__header h2 {
+  padding: 30px;
+}
+
+.card__img {
+  height: 50px;
+}
+
+.card__img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  border: white 5px solid;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  bottom: 22px;
+}
+
+.card__name {
+  background-color: #686de0;
+  color: white;
+  padding: 21px;
+  margin: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
