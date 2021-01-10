@@ -2,7 +2,6 @@
 
 .container{
     display: grid;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
@@ -11,65 +10,63 @@
 .image {
     position: relative;
     
-}
-
-.image__img {
-    display: block;
-    width: 100%;
-}
-
-.image__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 1500ms;
-}
-
-.image__overlay--blur {
-    backdrop-filter: blur(5px);
-}
-
-.image__overlay--primary {
-    background:gray;
-}
-
-.image__overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.image__overlay:hover {
-    opacity: 1;
-}
-
-.image__overlay:hover > * {
-    transform: translateY(0);
-}
-
-.image__button {
-    font-size: 2em;
-    padding:0px 20px 0px 20px;
-
-    
-}
-.image__button:hover{
-        background-color: rgb(118, 118, 218);
+    &__img {
+        display: block;
+        width: 100%;
     }
 
-.image__description {
-    font-size: 1.25em;
-    margin-top: 0.25em;
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 1500ms;
+    }
+
+    &__overlay--blur {
+        backdrop-filter: blur(5px);
+    }
+
+    &__overlay--primary {
+        background:gray;
+    }
+
+    &__overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.25s;
+    }
+
+    &__overlay:hover {
+        opacity: 1;
+    }
+
+    &__overlay:hover > * {
+        transform: translateY(0);
+    }
+
+    &__button {
+        font-size: 2em;
+        padding:0px 20px 0px 20px;        
+    }
+    &__button:hover{
+            background-color: rgb(118, 118, 218);
+        }
+
+    &__description {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
 }
+
 
 @media(max-width:1024px){
     .container{
